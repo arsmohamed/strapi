@@ -1,5 +1,5 @@
 export default {
-  //   graphql: {
-  //     enabled: true,
-  //   },
+  graphql: {
+    enabled: true,
+  },
 };
