@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_items",
+  "info": {
+    "singularName": "order-item",
+    "pluralName": "order-items",
+    "displayName": "OrderItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "qty": {
+      "type": "integer",
+      "required": true
+    },
+    "priceAtPurchase": {
+      "type": "decimal"
+    }
+  }
+}

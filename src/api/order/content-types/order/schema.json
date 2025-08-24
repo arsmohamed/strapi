@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Stat": {
+      "type": "enumeration",
+      "default": "PENDING ",
+      "enum": [
+        "PENDING ",
+        "CONFIRMED ",
+        "PACKED",
+        "SHIPPED ",
+        "DELIVERED",
+        "CANCELLED"
+      ]
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "placedAt": {
+      "type": "datetime"
+    },
+    "order_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-item.order-item"
+    }
+  }
+}

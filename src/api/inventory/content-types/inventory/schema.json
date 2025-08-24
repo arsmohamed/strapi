@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventories",
+  "info": {
+    "singularName": "inventory",
+    "pluralName": "inventories",
+    "displayName": "Inventory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "onHand": {
+      "type": "integer"
+    },
+    "reserved": {
+      "type": "integer"
+    }
+  }
+}
