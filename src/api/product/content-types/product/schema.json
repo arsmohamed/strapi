@@ -25,12 +25,7 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "active": {
       "type": "boolean",
@@ -39,12 +34,8 @@
     "inventory": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::inventory.inventory"
-    },
-    "order_items": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::order-item.order-item"
+      "target": "api::inventory.inventory",
+      "mappedBy": "product"
     }
   }
 }
