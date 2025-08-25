@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meros",
+  "info": {
+    "singularName": "mero",
+    "pluralName": "meros",
+    "displayName": "mero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kiriti": {
+      "type": "string"
+    }
+  }
+}
